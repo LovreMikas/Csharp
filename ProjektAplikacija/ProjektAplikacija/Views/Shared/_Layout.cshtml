@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Filmovi", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Unesi", "Index", "filmovis/Create")</li>
+                    <li>@Html.ActionLink("Lista unesenih", "Index", "filmovis")</li>
+                    <li>@Html.ActionLink("Lista", "top", "films/top")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <br /><br /><ul align="center">
+                
+                    <a href="https://www.imdb.com/chart/moviemeter/">Trenutno najpopularniji filmovi</a><br />
+                    <a href="https://editorial.rottentomatoes.com/guide/the-best-movies-of-2020/">Najbolji filmovi 2020.</a><br />
+           
+                   
+                    <a href="https://soap2day.to/?__cf_chl_jschl_tk__=7291c6a542163502e755bdc47c4191c229210687-1623198652-0-AQXrtj9W-KQze4jWCaNnIxmSUttrgm3p6x-hBuPzCh8M8ZhRAYnnpL9J2x7OYoSLnkcD4pa4VzU82jBxKoAReO4-9DTxt0cBWc8i_vyzlqnQ3LsSmSm9oFrS2ZfsISykSbcTvmEEb8MRurHckXpcNALhghcVFfqQI9XPwa8S_EUg2-vRkd7vP5-ghMrbtHtOsEyNvKlSdATsi-zr2iiPea2hKnlsfx887CXM7aOn8duqDkx43UihABx0BzhQRtgbVy2pIO3T9jJ1m-60WNyiM27X1BCEtAs0ZGyyv-nUPksP-RWnLNhIbQJn9I7DXDAK0guxIH7AhH9bUf4lmnNmk45ACepYvtMPGDcmj6DnwE-iMizHsYN3iXD9MgM3hhqMOVE1vJG2Ja1i0JDZs6dlHRE">Stranica na kojoj možete gledati filmove besplatno</a><br />
+                    <a href="https://www.netflix.com/hr/">Ako ste voljni mjesečno plaćati</a>
+
+             </ul>  
+            
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

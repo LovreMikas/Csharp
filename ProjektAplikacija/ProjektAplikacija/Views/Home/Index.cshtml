@@ -1,0 +1,160 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br />
+<br />
+<br />
+
+<div class="container">
+    <h3>3 najgledanija filma na HBO trenutno:</h3>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapse1">click</a>
+                </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">Friends: The Reunion</div>
+                <div class="panel-footer">Wonder Woman 1984</div>
+                <div class="panel-footer">Little Women</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="~/Content/prijatelji.jpg" />
+        </div>
+
+
+        <div class="item">
+            <img src="~/Content/ww.jpg" />
+        </div>
+
+
+        <div class="item">
+            <img src="~/Content/little.jpg" />
+        </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<p align="center">Označi koja si od ta tri filma gledao/la:</p>
+
+<div class="form-check" align="center">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+        1.
+    </label>
+</div>
+<div class="form-check" align="center">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+        2.
+    </label>
+</div>
+<div class="form-check" align="center">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+        3.
+    </label>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<p>Koliko ljudi je do sad pogledalo sva tri filma:</p>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 36%;" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">36%</div>
+</div>
+<br />
+<br />
+
+<p>Koliko ljudi je do sad pogledalo dva filma:</p>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">48%</div>
+</div>
+<br />
+<br />
+
+<p>Koliko ljudi je do sad pogledalo jedan film:</p>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 14%;" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100">14%</div>
+</div>
+<br />
+<br />
+
+<p>Koliko ljudi nije pogledalo nijedan film:</p>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 2%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">2%</div>
+</div>
+<br />
+<br />
+<br />
+<br /><br /><br /><br />
+
+
+
+
+<div class="mb-3" align="center">
+    <label for="exampleFormControlTextarea1" class="form-label">Napiši ako imaš neku pohvalu ili primjedbu na ta tri filma.</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<br />
+<div class="col-auto" align="center">
+    <button type="submit" class="btn btn-primary mb-3">Potvrdi svoje odgovore</button>
+</div>
+<br />
+<br />
+<br />
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ProjektAplikacija.Models.film>
+
+@{
+    ViewBag.Title = "top";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h1>10 filmova ikad</h1><br /><br />
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Naziv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Zanr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Redatelj)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trajanje)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Godina_izdanja)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naziv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Zanr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Redatelj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trajanje)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Godina_izdanja)
+        </td>
+
+    </tr>
+}
+
+</table>
